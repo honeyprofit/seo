@@ -1,0 +1,206 @@
+section {
+  /* padding: 0.2vw 12% 20rem; */
+}
+.casestudy .subheading {
+  position: relative;
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+.casestudy .subheading.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#case-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 4rem;
+  padding: 0 9%;
+}
+section.casestudy {
+  padding-top: calc(69px + 8rem);
+}
+.casestudy .case_summary {
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+}
+.case_summary ul {
+  display: flex;
+  color: var(--main-color);
+  width: 100%;
+  justify-content: space-evenly;
+}
+.case_summary ul li {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.case_summary ul li em {
+  font-size: 1.8rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color);
+}
+em a {
+  font-size: 1.8rem;
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: underline;
+  position: relative;
+}
+em a::after {
+  content: " >>";
+  color: var(--main-color);
+  display: inline-block;
+  margin-left: 5px;
+  animation: arrowBlink 1s infinite alternate;
+}
+@keyframes arrowBlink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.case_card {
+  display: flex;
+  padding: 2rem 0;
+}
+.case_card h6 {
+  color: var(--main-color);
+  font-size: 3rem;
+  width: 20%;
+  /* max-width: 100%; */
+  font-weight: 300;
+}
+.case_card span.ko {
+  text-align: left;
+  width: 80%;
+}
+.ko-en {
+  color: red;
+}
+.casestudy figure {
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+}
+.casestudy figure:nth-of-type(1) {
+  position: relative;
+}
+#stamp_preview img {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  animation: rotateStamp 4s linear infinite;
+}
+
+@keyframes rotateStamp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.casestudy figure img,
+.casestudy figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-20);
+}
+.casestudy .figure_wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.casestudy .figure_wrap figure {
+  width: 49%;
+  height: auto;
+}
+.casestudy .figure_wrap figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+  background: #fff;
+}
+figcaption {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Nunito Sans", sans-serif;
+}
+figcaption::before {
+  content: "< ";
+}
+figcaption::after {
+  content: " >";
+}
+
+/* ------------------------다음페이지 projects.html-------------------------- */
+/* section.services */
+.services_wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+.service_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--text-color-dark);
+  height: 400px;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.service_card:hover {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  transform: scale(1.02);
+  box-shadow: var(--card-shadow);
+}
+.service_info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.service_info i {
+  font-size: 6rem;
+}
+.service_info h4 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-weight: 800;
+}
+.service_info p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7;
+}

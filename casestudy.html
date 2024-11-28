@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="welcome to Younghyun's portfolio" />
+    <meta name="keywords" content="frondend, webdeveloper, webdesigner" />
+    <meta name="author" content="Younghyun Kim" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon192.png" sizes="192x192" />
+    <title>Younghyun's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/casestudy.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/1f24d92328.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/intro.js"></script>
+    <script src="js/casestudy.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EMWDGZC88J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EMWDGZC88J");
+    </script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="noise"></div>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo_wrap">
+          <a href="index.html" class="logo" title="Home">
+            <span class="sr-only">Home</span>
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 148.79 118.29"
+              xml:space="preserve"
+            >
+              <!-- <g id="Layer_2" data-name="Layer 2"> -->
+              <g id="Graphic_Elements" data-name="Graphic Elements">
+                <path
+                  class="cls-1"
+                  d="M0,3.5H0A58.86,58.86,0,0,1,58.86,62.36v55.93a0,0,0,0,1,0,0h0A58.86,58.86,0,0,1,0,59.43V3.5A0,0,0,0,1,0,3.5Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M64,70.7h0V41a37.5,37.5,0,0,1,37.5-37.5h0V33.21A37.49,37.49,0,0,1,64,70.7Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M64,76.53h43a41.76,41.76,0,0,1,41.76,41.76v0a0,0,0,0,1,0,0h-43A41.76,41.76,0,0,1,64,76.53v0a0,0,0,0,1,0,0Z"
+                />
+              </g>
+              <!-- </g> -->
+            </svg>
+          </a>
+        </div>
+        <ul class="gnb">
+          <li><a href="index.html#home">home</a></li>
+          <li><a href="index.html#aboutme">about me</a></li>
+          <li><a href="index.html#casestudy" class="mark">case study</a></li>
+          <li><a href="index.html#skills">skills</a></li>
+          <li><a href="index.html#collabo">collabo</a></li>
+        </ul>
+        <div class="con_wrap">
+          <a href="index.html#contact" class="con_btn">contact</a>
+        </div>
+      </nav>
+
+      <div class="themeDarkLight"></div>
+      <div class="burger" id="burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="casestudy">
+        <h2 class="subheading visible" id="case-title">Title</h2>
+        <em id="case-description">This is project description</em>
+
+        <div class="case_summary container1">
+          <ul>
+            <li>
+              Role<em id="summary-role"
+                >Planning, UI/UX, Frontend development</em
+              >
+            </li>
+            <li>Year<em id="summary-year">2024</em></li>
+            <li>Type<em id="summary-type">Web development</em></li>
+            <li>
+              Source<em id="summary-source" class="sourcecode"
+                ><a href="https://github.com/honeyprofit" target="_blank"
+                  >View on GitHub</a
+                ></em
+              >
+            </li>
+            <li>
+              Final product<em id="summary-final" class="visit"
+                ><a href="http://paddingtonbeta.dothome.co.kr/" target="_blank"
+                  >Website</a
+                ></em
+              >
+            </li>
+          </ul>
+        </div>
+
+        <figure>
+          <img src="images/loading.jpg" alt="title_image" id="case-image1" />
+          <a
+            href="https://github.com/honeyprofit"
+            target="_blank"
+            id="stamp_preview"
+            ><img src="images/stamp_preview.svg" alt="preview web"
+          /></a>
+        </figure>
+
+        <div class="case_card">
+          <h6>Challenge</h6>
+          <span class="ko" id="case-challenge">challenge</span>
+        </div>
+        <div class="case_card">
+          <h6>Goals</h6>
+          <span class="ko" id="case-goal">goals</span>
+        </div>
+
+        <figure>
+          <img
+            src="images/loading.jpg"
+            alt="컨셉"
+            class="caption"
+            id="case-image2"
+          />
+          <figcaption>Figure 1</figcaption>
+        </figure>
+        <div class="figure_wrap">
+          <figure>
+            <img
+              src="images/loading.jpg"
+              alt="디자인시스템"
+              class="caption"
+              id="case-image3"
+            />
+            <figcaption>Figure 2</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/loading.jpg"
+              alt="디자인시스템"
+              class="caption"
+              id="case-image4"
+            />
+            <figcaption>Figure 3</figcaption>
+          </figure>
+        </div>
+
+        <div class="case_card">
+          <h6>Role and <br />Responsibilities</h6>
+          <span class="ko" id="case-roles">Role and Responsibilities</span>
+        </div>
+        <div class="case_card">
+          <h6>Tools</h6>
+          <span class="ko" id="case-tool">design gools</span>
+        </div>
+
+        <figure>
+          <img
+            src="images/loading.jpg"
+            alt="이미지"
+            class="caption"
+            id="case-image6"
+          />
+          <figcaption>Figure 4</figcaption>
+        </figure>
+
+        <div class="case_card">
+          <h6>Result</h6>
+          <span class="ko" id="case-result">Key learning</span>
+        </div>
+        <div class="case_card">
+          <h6>Key Learning</h6>
+          <span class="ko" id="case-learning">Key learning</span>
+        </div>
+        <div class="case_card">
+          <h6>Key value</h6>
+          <span class="ko" id="case-value">Key value</span>
+        </div>
+
+        <figure>
+          <div id="case-media">
+            <img src="images/loading.jpg" alt="아웃풋이미지" id="case-image5" />
+          </div>
+          <figcaption>Figure 5</figcaption>
+        </figure>
+        <div class="case_card">
+          <h6>Future Roadmap</h6>
+          <span class="ko" id="case-conclusion">Future Roadmap</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="sns_wrap">
+        <!--    <a href="#"><i class="fa-brands fa-behance"></i></a> -->
+        <a href="https://github.com/honeyprofit/" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://x.com/YH4525402121608" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+      <!-- sns_wrap -->
+
+      <ul class="list">
+        <!-- <li><a href="#">FAQS</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+        <li><a href="#" target="_blank">Visit my illustration website</a></li>
+      </ul>
+      <div class="f_say container2">
+        <h6>LET'S TALK SO SAY HELLO</h6>
+      </div>
+      <!-- f_say -->
+      <div class="f_copy container2">
+        <p class="copyright en">
+          Younghyun Kim&copy; 2024 All rights Reserved.
+        </p>
+        <p class="location en">
+          <i class="fa-solid fa-globe"></i> Seoul, South Korea.
+        </p>
+      </div>
+      <!-- f_copy -->
+    </footer>
+  </body>
+</html>
