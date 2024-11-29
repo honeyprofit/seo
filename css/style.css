@@ -292,6 +292,54 @@ span.ko {
   }
 }
 
+/*modal*/
+/* Modal Styling */
+#item01 {
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  /* scrollbar-width: none; */
+}
+
+.modal-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.modal-images img {
+  width: 100%;
+  height: auto;
+}
+.modal-close {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 10rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
 /* header / main */
 section {
   padding: 10rem 12% 20rem;
@@ -825,7 +873,7 @@ ul.gnb > li > a:hover {
 #item01 figure {
   width: 40%;
   position: absolute;
-  right: 4%;
+  right: 10%;
   bottom: 20%;
   padding: 1rem;
   transition: 1s ease;
@@ -836,7 +884,15 @@ ul.gnb > li > a:hover {
 #item01:hover figure {
   bottom: 10%;
 }
-
+#item01 a > img {
+  width: 10%;
+  position: absolute;
+  right: 5rem;
+}
+#item01 a > img:hover {
+  transform: rotate(2deg);
+  transition: 0.5s;
+}
 #item1 {
   grid-row-start: 2;
   grid-row-end: 4;

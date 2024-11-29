@@ -222,11 +222,14 @@
   }
   #item01 figure {
     right: 50%;
-    transform: translateX(50%);
-    bottom: 45%;
+    transform: translateX(70%);
+    bottom: 20%;
   }
   #item01:hover figure {
     bottom: 30%;
+  }
+  #item01 a > img {
+    display: none;
   }
   #item2 figure {
     left: 50%;

@@ -29,6 +29,7 @@
     <script src="js/common.js"></script>
     <script src="js/collabo.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 
     <script
       async
@@ -48,6 +49,16 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
     <div class="noise"></div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-images">
+          <!-- inner images-->
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <nav class="navbar" id="nav">
         <div class="logo_wrap">
@@ -191,7 +202,7 @@
           <h2 class="subheading">Case study</h2>
           <div class="bento">
             <div class="box" id="item01">
-              <a href="casestudy.html?case=younghyunkim">
+              <!-- <a href="casestudy.html?case=younghyunkim">
                 <figure>
                   <img src="images/mockup_mob1.png" alt="mobile image" />
                 </figure>
@@ -200,10 +211,22 @@
                   planning, UI/UX, frontend development<br />
                   <span class="ko">포트폴리오 제작과정을 소개합니다.</span>
                 </p>
+              </a> -->
+              <a href="">
+                <figure>
+                  <img src="images/mockup_bready.png" alt="비레디" />
+                </figure>
+                <img src="images/mockup_bready.png" alt="비레디" />
+                <h5>B.ready</h5>
+                <p class="en">
+                  Research, planning, UI/UX<br />
+                  <span class="ko">SEO marketing strategy</span>
+                </p>
               </a>
             </div>
             <div class="box" id="item1">
-              <a href="casestudy.html?case=sprout">
+              <!-- <a href="casestudy.html?case=sprout"> -->
+              <a href="">
                 <figure>
                   <img src="images/sprout/gif_land.gif" alt="sprout" />
                   <img src="images/sprout/gif-plants.gif" alt="sprout" />
@@ -251,9 +274,7 @@
                 </figure>
                 <h5>Green energy</h5>
                 <p class="en">
-                  <span class="ko">
-                    css media query와 jquery를 이용하여 모션을 구현.
-                  </span>
+                  <span class="ko"> css, jquery animation </span>
                 </p>
               </a>
             </div>
@@ -262,8 +283,8 @@
                 <figure><img src="images/projects01_mac.png" alt="" /></figure>
                 <h5>paddington</h5>
                 <p class="en">
-                  기획, frontend develpment, html css jquery<br />
-                  <span class="ko"> 반응형 웹사이트. </span>
+                  UIUX, html, css, jquery<br />
+                  <span class="ko"> Responsive web design </span>
                 </p>
               </a>
             </div>
