@@ -317,7 +317,7 @@ span.ko {
   overflow-y: auto;
   left: 0;
   top: 0;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
 }
 
 .modal-images {

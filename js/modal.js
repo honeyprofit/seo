@@ -5,6 +5,7 @@ $(document).ready(function () {
   const closeModal = document.querySelector(".modal-close");
   const bready_box = document.getElementById("item01");
   const sprout_box = document.getElementById("item1");
+  const body = document.querySelector("body");
 
   // bready
   bready_box.addEventListener("click", (e) => {
