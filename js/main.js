@@ -8,7 +8,7 @@ $(function () {
   const $typedTextSpan = $(".typed-text");
   const $cursorSpan = $(".cursor");
 
-  const textArray = ["a web designer", "a web developer", "an illustrator"];
+  const textArray = ["marketer", "UIUX designer", "web developer"];
   const typingDelay = 100;
   const erasingDelay = 50;
   const newTextDelay = 1000;

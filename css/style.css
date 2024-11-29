@@ -332,7 +332,7 @@ span.ko {
 .modal-close {
   position: fixed;
   top: 0px;
-  right: 10px;
+  right: 30px;
   background: none;
   border: none;
   font-size: 10rem;
@@ -1200,9 +1200,9 @@ ul.gnb > li > a:hover {
 section.skills {
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   overflow: hidden;
-  border-bottom: none;
+  /* border-bottom: none; */
 }
 span.skill {
   color: var(--text-color-grey);
@@ -1313,6 +1313,7 @@ section.collabo {
   padding-bottom: 0;
   overflow: hidden;
   border-bottom: none;
+  display: none;
 }
 
 /* section .contact */
