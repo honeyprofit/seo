@@ -1,0 +1,48 @@
+.growth figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-20);
+}
+.figure_wrap {
+  width: 100%;
+  padding: 3rem 0;
+  border-radius: var(--border-radius-20);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid var(--basic-color-grey);
+  background: var(--bg-color);
+  transition: 0.6s;
+}
+.figure_wrap:hover {
+  border: 1px solid var(--main-color);
+  box-shadow: var(--card-shadow);
+  background: var(--main-color-40);
+}
+.figure_wrap figure {
+  width: 90%;
+  height: auto;
+}
+.figure_wrap figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+  background: #fff;
+}
+figcaption {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Nunito Sans", sans-serif;
+}
+figcaption::before {
+  content: "< ";
+}
+figcaption::after {
+  content: " >";
+}

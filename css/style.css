@@ -53,7 +53,7 @@ html {
 
 /* 스크롤바 */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 18px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
