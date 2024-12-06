@@ -17,7 +17,7 @@ $(document).ready(function () {
     <img src="images/bready/bready4.png" alt="Bready casestudy" />
     <img src="images/bready/bready5.jpg" alt="Bready casestudy" />
     <img src="images/bready/bready6.jpg" alt="Bready casestudy" />
-    <img src="images/bready/bready7_2.png" alt="Bready casestudy" />
+    <img src="images/bready/bready7_1.png" alt="Bready casestudy" />
     <img src="images/bready/bready8.png" alt="Bready casestudy" />
     `;
     modal.style.display = "flex";
